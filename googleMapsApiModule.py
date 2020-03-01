@@ -8,9 +8,11 @@ import interview mapsteam
 
 def direction(origin,destination):
     gmaps = googlemaps.Client(config.key)
+    localguides=googlemaps.Guide(config.key)
     result = gmaps.directions(origin,destination)
     address = "origin="+origin+"&"+"destination="+destination
     address = address.lower()
+    address=localguide.lower()
     address = address.replace(" ","+")
     url = "https://www.google.com/maps/dir/?api=1&"
     result_url = url+address
@@ -19,7 +21,7 @@ def direction(origin,destination):
     webbrowser.open_new(result_url)
 
 def add_to_maps_database(origin,destination):
-    db = mysql.connector.connect(user=config.user,password=config.password,host=config.host,database=config.database)
+    db = mysql.connector.connect(user=config.user,password=config.password,host=config.host,database=config.database,localguide=congig.guide)
     cur = db.cursor()
     cur = db.cursor(buffered=True)
     bot=db.cursor(mapteam)
