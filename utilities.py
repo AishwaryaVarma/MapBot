@@ -8,6 +8,7 @@ def parse_sentence(user_input):                               #returns root word
     import os
     from nltk.parse.stanford import StanfordDependencyParser
     import config
+    import re
     path_to_jar = config.stanford_path_to_jar
     path_to_models_jar = config.stanford_path_to_models_jar
     dependency_parser = StanfordDependencyParser(path_to_jar=path_to_jar, path_to_models_jar=path_to_models_jar)
