@@ -18,6 +18,7 @@ The Product Manager for MAX is Grant Henry,S
 ChatbotCS is the Oracle Chatbot Cloud Service,S
 MAX is a codeless tool for business analysts,S
 What is JSON?,Q
+
 What is the OCM?,Q
 ABCS is Application Builder Cloud Service,S
 "The OCM is the Oracle Cloud Machine, an on-premisis cloud device",Q
@@ -35,6 +36,7 @@ JSON is JavaScript Object Notification,S
 Hey Siri,C
 Siri is my friend,C
 hi,C
+
 hi there,C
 Please can you tell me what MAX is,Q
 I am fine,C
@@ -59,15 +61,18 @@ what is a database?,Q
 please can you tell me who Dom Fakename is?,Q
 please can you tell me who Dominic Fakename is?,Q
 hello,C
+
 who am i?,Q
 That is not what I asked,C
 I am fine thank you,C
 what's ABCS?,Q
 "Application Builder Cloud Service, designed for citizen developers",S
 no idea,C
+
 are you a chatbot?,Q
 what is a chatbot?,Q
 what is MCS?,Q
+
 Mobile Cloud Service,S
 What is MAX?,Q
 Mobile Application Accelerator,S
@@ -83,6 +88,7 @@ A product manager for Oracle database,S
 Where do you live?,Q
 Hello,C
 What's new?,C
+nothing at all
 Thanks for telling me that,C
 Dom Fakename is one of the product managers for the Oracle database.,S
 Stop asking me questions!,C
