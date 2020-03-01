@@ -62,4 +62,5 @@ def geocoding(search_location):
     address = address.replace(" ","+")
     url = "https://www.google.com/maps/search/?api=1&query="
     result_url = url+address
-    webbrowser.open_new(result_url)
+
+    
