@@ -4,6 +4,7 @@ import mapbot
 import webbrowser
 import config
 import mysql.connector
+import interview mapsteam
 
 def direction(origin,destination):
     gmaps = googlemaps.Client(config.key)
@@ -14,6 +15,7 @@ def direction(origin,destination):
     url = "https://www.google.com/maps/dir/?api=1&"
     result_url = url+address
     print(result_url)
+    print(interview)
     webbrowser.open_new(result_url)
 
 def add_to_maps_database(origin,destination):
