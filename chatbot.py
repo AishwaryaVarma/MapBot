@@ -43,6 +43,7 @@ def message_to_bot(H,clf,learn_response):
         B = "Bye! I'll miss you!"
         return B,learn_response                                                                #exit loop
     #grammar parsing
+    
     subj = set()
     obj = set()
     verb = set()
