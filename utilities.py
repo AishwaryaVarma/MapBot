@@ -1,10 +1,11 @@
 def setup_nltk():
-    import nltk
-    nltk.download('punkt')
+  
     nltk.download('averaged_perceptron_tagger')
     nltk.download('stopwords')
 #grammar parsing
-def parse_sentence(user_input):                               #returns root word, triples of StanfordDependencyParser
+def parse_sentence(user_input):  
+    #returns root word, triples of StanfordDependencyParser
+    import io
     import os
     from nltk.parse.stanford import StanfordDependencyParser
     import config
@@ -121,6 +122,7 @@ def add_to_database(classification,subject,root,verb,H):
 #get a random chat response
 def get_chat_response():
     import config
+    import idconfig
     import mysql.connector
     db = mysql.connector.connect(user=config.user,password=config.password,host=config.host,database=config.database)
     cur = db.cursor()
